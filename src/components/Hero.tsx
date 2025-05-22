@@ -32,7 +32,7 @@ const Hero: React.FC<HeroProps> = ({ scrollYProgress }) => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            Club Corners Car Wash
+            Not Just Clean. Club Corners Clean.
           </h1>
         </motion.div>
         
@@ -42,7 +42,7 @@ const Hero: React.FC<HeroProps> = ({ scrollYProgress }) => {
           transition={{ duration: 0.8, delay: 0.4 }}
         >
           <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto">
-            Experience premium car wash and detailing services in Alpharetta, GA.
+            Discover the difference in professional care and attention to detail in Alpharetta, GA.
           </p>
         </motion.div>
         
