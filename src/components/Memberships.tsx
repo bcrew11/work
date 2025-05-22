@@ -14,7 +14,7 @@ const Memberships: React.FC<MembershipsProps> = () => {
   const membershipTiers = {
     s600: {
       name: 'S600',
-      description: 'Complete full-service car wash',
+      description: 'A complete full-service car wash featuring a soft-touch tunnel wash, interior vacuum and wipedown, and professional tire shine. Ideal for everyday vehicles needing a fresh, polished look.',
       pricing: [
         { cars: '1st car', price: 60.95 },
         { cars: '2nd car', price: 50.95 },
@@ -23,7 +23,7 @@ const Memberships: React.FC<MembershipsProps> = () => {
     },
     pure: {
       name: 'Pure',
-      description: 'Complete full-service hand wash',
+      description: 'Experience our signature full-service hand wash. Includes a gentle soap wash, expert hand-dry, and detailed tire shine — perfect for those who value personal attention and finish.',
       pricing: [
         { cars: '1st car', price: 79.95 },
         { cars: '2nd car', price: 66.95 },
@@ -32,7 +32,7 @@ const Memberships: React.FC<MembershipsProps> = () => {
     },
     pureXL: {
       name: 'Pure XL',
-      description: 'Complete full-service hand wash for larger vehicles',
+      description: 'Specialized full-service hand wash for large vehicles like Ford F250s, GMC Sierras, Ram 2500s, duallys, and lifted trucks. Extra space, extra care, and extra clean.',
       pricing: [
         { cars: '1st car', price: 109.95 },
         { cars: '2nd car', price: 94.95 },
@@ -53,9 +53,9 @@ const Memberships: React.FC<MembershipsProps> = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold mb-4 text-black">Monthly Memberships</h2>
+          <h2 className="text-4xl font-bold mb-4 text-black">Monthly Memberships Made for You</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            We offer both single and multi-car memberships. Your membership entitles you to unlimited full-service washes, priority entry to the car wash, and discounts for our detail services.
+            Enjoy unlimited full-service washes, skip the wait with priority access, and save on detailing services. Available for both single and multi-car households.
           </p>
         </motion.div>
         
