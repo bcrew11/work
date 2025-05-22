@@ -90,9 +90,9 @@ const Services: React.FC = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-4xl font-bold mb-4 text-white">Service & Pricing</h2>
+          <h2 className="text-4xl font-bold mb-4 text-white">Professional Car Wash Services, No Guesswork.</h2>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            Choose from our range of premium car wash services.
+            From daily drivers to Lamborghinis and lifted trucks, we’ve got a premium wash option made just for you.
           </p>
         </motion.div>
         
