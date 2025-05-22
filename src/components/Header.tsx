@@ -36,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ scrollY }) => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             <a href="#services" className="text-white hover:text-blue-400 transition-colors">
-              Services
+              Washes
             </a>
             <a href="#memberships" className="text-white hover:text-blue-400 transition-colors">
               Memberships
