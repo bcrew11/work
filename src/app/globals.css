@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-family: var(--font-roboto), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom animations */
+.parallax {
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.glass-effect {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.hero-gradient {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
+}
+
+/* Apple-inspired button styles */
+.button-primary {
+  @apply bg-primary text-foreground px-6 py-3 rounded-full font-medium transition-all duration-300 hover:bg-highlight;
+}
+
+.button-secondary {
+  @apply bg-opacity-10 bg-white text-foreground px-6 py-3 rounded-full font-medium transition-all duration-300 hover:bg-opacity-20 backdrop-blur;
+}
+
+.button-tertiary {
+  @apply text-highlight font-medium transition-all duration-300 relative;
+}
+
+.button-tertiary:after {
+  content: '→';
+  margin-left: 0.5rem;
+  transition: margin 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.button-tertiary:hover:after {
+  margin-left: 1rem;
+}
